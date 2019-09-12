@@ -1,0 +1,107 @@
+@import 'base.less';
+/*首页*/
+.main-index{
+  .index-banner{
+    a{
+      display: block;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .modal{
+    margin-top:30px;
+  }
+  .index-tab{
+    margin-top:0;
+    .layui-tab-title{
+      li{
+        font-size:16px;
+        &:after{
+          border-top:2px solid @white;
+        }
+        &.layui-this{
+          font-weight:600;
+          &:after{
+            border-top-color:@red_orange;
+          }
+        }
+      }
+    }
+    .layui-table-view{
+      border:0;
+    }
+    .layui-tab-content{
+      padding:0;
+    }
+    .layui-table-header{
+      border:0;
+      th{
+        border-color:@white;
+      }
+    }
+  }
+  .list-modal{
+    padding:10px 0;
+    .pic{
+      width:200px;
+      img{
+        width: 100%;
+      }
+    }
+    .lists-box{
+      width: 800px;
+      padding:0 20px;
+      box-sizing: border-box;
+      &.left-list{
+        padding:0 50px 0 0;
+      }
+      li{
+        height:28px;
+        line-height: 28px;
+        padding-left: 20px;
+        position: relative;
+        // border-bottom:1px dashed @gray_e6;
+        i{
+          position: absolute;
+          font-size:12px;
+          left:5px;
+          color:@gray_99;
+        }
+      a{
+        display: inline-block;
+        max-width: 600px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      span{
+        float:right;
+      }
+      }
+      
+    }
+  }
+}
+/*注册*/
+.main-register{
+  border-top:1px solid @gray_e6;
+  .layui-form{
+    width: 460px;
+    margin:50px 0 50px 210px;
+  }
+  .layui-form-label{
+    padding-left:0;
+    width: 95px;
+  }
+  .layui-btn{
+    width: 100%;
+    padding:0;
+    text-align: center;
+  }
+  .picmark{
+    width: 100px;
+    height:36px;
+    border:1px solid @gray_e6;
+  }
+}

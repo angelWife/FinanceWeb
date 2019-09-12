@@ -1,0 +1,35 @@
+@charset 'utf-8';
+.head .head-nav .navList .childNavBox {
+  border: 1px solid #f5f5f5;
+}
+.head .head-nav .navList .childNavBox .index {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid;
+  border-color: transparent transparent #FF4400;
+}
+.head .head-nav .navList .childNavBox.nav-bg1 .index {
+  top: -12px;
+  left: 114px;
+}
+.head .head-nav .navList .childNavBox.nav-bg2 .index {
+  top: -12px;
+  left: 194px;
+}
+.head .head-nav .navList .childNavBox.nav-bg3 .index {
+  top: -12px;
+  left: 274px;
+}
+.head .head-nav .navList .childNavBox.nav-bg4 .index {
+  top: -12px;
+  left: 354px;
+}
+.head .head-nav .navList .childNavBox.nav-bg5 .index {
+  top: -12px;
+  left: 434px;
+}
+.head .head-nav .navList .childNavBox.nav-bg6 .index {
+  top: -12px;
+  left: 514px;
+}
