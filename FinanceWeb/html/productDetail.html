@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>西藏东财基金</title>
+  <link rel="stylesheet" href="../dist/layui/css/layui.css">
+  <link rel="stylesheet" href="../dist/fonts/iconfont.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/jquery-1.11.3.js"></script>
+  <script src="../dist/layui/layui.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/echarts-4.js"></script>
+  <!--[if lt IE 9]>
+     <link rel="stylesheet" href="../css/compatible.css">
+     <script src="../js/echarts-2.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+ <![endif]-->
+  <div class="layui-fluid head">
+    <div class="head-msg">
+      <div class="layui-container layui-row  layui-clear">
+        <div class="layui-col-md6 left">
+          欢迎来到西藏东财基金，基金有风险，投资需谨慎
+        </div>
+        <div class="layui-col-md6 right text-right">客服热线：400-92-10107</div>
+      </div>
+    </div>
+    <div class="head-nav">
+      <div class="layui-container">
+        <div class="left logo">
+          <img src="../images/common/logo.png" alt="">
+        </div>
+        <div class="right">
+          <ul class="navList layui-clear" id="head-nav">
+            <li class="item active">
+              <a href="index.html">首页</a>
+            </li>
+            <li class="item">
+              <a href="javascript:;" class="hasChild">
+                <span>旗下基金</span>
+              </a>
+              <div class="childNavBox nav-bg1">
+                <span class="index"></span>
+                <div class="child-navList">
+                  <div class="title">
+                    <span class="line"></span>
+                    <span class="text">指数型</span>
+                  </div>
+                  <div class="lastchild">
+                    <a class="">
+                      <span>XX创新基金A</span>
+                    </a>
+                    <a class="">
+                      <span>XX创新基金B</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="child-navList">
+                  <div class="title">
+                    <span class="line"></span>
+                    <span class="text">指数型</span>
+                  </div>
+                  <div class="lastchild">
+                    <a class="">
+                      <span>XX创新基金A</span>
+                    </a>
+                    <a class="">
+                      <span>XX创新基金B</span>
+                    </a>
+                    <a class="">
+                      <span>XX创新基金A</span>
+                    </a>
+                  </div>
+                  <div class="lastchild">
+                    <a class="">
+                      <span>XX创新基金B</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="child-navList">
+                  <div class="title">
+                    <span class="line"></span>
+                    <span class="text">股票型</span>
+                  </div>
+                  <div class="lastchild">
+                    <a class="">
+                      <span>XX创新基金A</span>
+                    </a>
+                    <a class="">
+                      <span>XX创新基金B</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="child-navList">
+                  <div class="title">
+                    <span class="line"></span>
+                    <span class="text">债券型</span>
+                  </div>
+                  <div class="lastchild">
+                    <a class="">
+                      <span>XX创新基金A</span>
+                    </a>
+                    <a class="">
+                      <span>XX创新基金B</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="child-navList">
+                  <div class="title">
+                    <span class="line"></span>
+                    <span class="text">混合型</span>
+                  </div>
+                  <div class="lastchild">
+                    <a class="">
+                      <span>XX创新基金A</span>
+                    </a>
+                    <a class="">
+                      <span>XX创新基金B</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="child-navList">
+                  <div class="title">
+                    <span class="line"></span>
+                    <span class="text">货币型</span>
+                  </div>
+                  <div class="lastchild">
+                    <a class="">
+                      <span>XX创新基金A</span>
+                    </a>
+                    <a class="">
+                      <span>XX创新基金B</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <a href="#"><span>信息披露</span></a>
+              <div class="childNavBox nav-bg2 pl0">
+                <span class="index"></span>
+                <div class="child-nav">
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">公司公告</span>
+                  </a>
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">产品公告</span>
+                  </a>
+                </div>
+                <div class="child-nav">
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">销售人员公示</span>
+                  </a>
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">债券交易员公示</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <a href="#"><span>资讯信息</span></a>
+              <div class="childNavBox nav-bg3 pl0">
+                <span class="index"></span>
+                <div class="child-nav">
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">公司动态</span>
+                  </a>
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">市场动态</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <a href="#"><span>投教专栏</span></a>
+              <div class="childNavBox nav-bg4 pl0">
+                <span class="index"></span>
+                <div class="child-nav">
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">政策法规</span>
+                  </a>
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">反洗钱</span>
+                  </a>
+                </div>
+                <div class="child-nav">
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">投资者适当性</span>
+                  </a>
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">投资者教育</span>
+                  </a>
+                </div>
+                <div class="child-nav">
+                  <a href="" class="border">
+                    <span class="line"></span>
+                    <span class="text">反商业贿赂</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <a href="#"><span>客服服务</span></a>
+              <div class="childNavBox nav-bg5 pl0">
+                <span class="index"></span>
+                <div class="child-nav">
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">业务规划</span>
+                  </a>
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">下载中心</span>
+                  </a>
+                </div>
+                <div class="child-nav">
+                  <a href="" class="border">
+                    <span class="line"></span>
+                    <span class="text">服务指南</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <a href="#"><span>关于我们</span></a>
+              <div class="childNavBox nav-bg6 pl0">
+                <span class="index"></span>
+                <div class="child-nav">
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">公司概况</span>
+                  </a>
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">公司资质</span>
+                  </a>
+                </div>
+                <div class="child-nav">
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">诚聘英才</span>
+                  </a>
+                  <a href="">
+                    <span class="line"></span>
+                    <span class="text">公司资质</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="login">
+            <button class="layui-btn layui-btn-sm layui-btn-primary">登录</button>
+            <button class="layui-btn layui-btn-sm layui-btn-warm">注册</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="layui-container main-productDetail">
+    <div class="nav-tree">
+      <span class="line"></span>
+      <a href="">首页</a>
+      <i class="iconfont">&#xe6cc;</i>
+      <a href="">旗下基金</a>
+      <i class="iconfont">&#xe6cc;</i>
+      <span class="text">指数型</span>
+      <i class="iconfont">&#xe6cc;</i>
+      <span class="text">XX基金指数</span>
+    </div>
+    <div class="detail-title">
+      XX证券投资基金
+    </div>
+    <div class="detail-nav" id="detailNav">
+      <div class="item active">基金信息</div>
+      <div class="item">基金业绩</div>
+      <div class="item">费率结构</div>
+      <div class="item">基金分红</div>
+      <div class="item">基金公告</div>
+      <div class="item">销售机构</div>
+      <div class="line">
+        <img src="../images/common/item1.png" />
+      </div>
+    </div>
+    <div class="detail-box" id="detailBox">
+      <div class="item baseInfo">
+        <div class="list-title">
+          <img src="../images/icon/icon_dc_01.png" />
+          <span>基本信息</span>
+        </div>
+        <div class="list-modal">
+          <div class="title">
+            <span class="icon"></span>
+            <span class="text">基本信息</span>
+          </div>
+          <div class="list-detail">
+            <table class="layui-table">
+              <tbody>
+                <tr>
+                  <td class="name" width='110'>基金全称</td>
+                  <td class="text" width='216'>XX成长价值混合型证券投资基金</td>
+                  <td class="name" width='110'>基金类型</td>
+                  <td class="text" width='216'>混合型</td>
+                  <td class="name" width='110'>成立日期</td>
+                  <td class="text" width='216'>2019-08-04</td>
+                </tr>
+                <tr>
+                  <td class="name">基金简称</td>
+                  <td class="text">XX成长价型混合型C</td>
+                  <td class="name">风险等级</td>
+                  <td class="text">中风险（R3）</td>
+                  <td class="name">基金管理人</td>
+                  <td class="text">XX基金管理有限公司</td>
+                </tr>
+                <tr>
+                  <td class="name">基金代码</td>
+                  <td class="text">XX7855</td>
+                  <td class="name">基金经理</td>
+                  <td class="text">张经理</td>
+                  <td class="name">基金托管人</td>
+                  <td class="text">XX基金管理有限公司</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="list-modal">
+          <div class="title-small">
+            <span class="icon"></span>
+            <span class="text">运作方式</span>
+          </div>
+          <div class="list-detail">
+            <span>契约型开放式</span>
+          </div>
+        </div>
+        <div class="list-modal">
+          <div class="title-small">
+            <span class="icon"></span>
+            <span class="text">业绩比较基准</span>
+          </div>
+          <div class="list-detail">
+          </div>
+        </div>
+        <div class="list-modal">
+          <div class="title-small">
+            <span class="icon"></span>
+            <span class="text">风险收益特征</span>
+          </div>
+          <div class="list-detail">
+            本基金为混合型基金，其预期风险及预期收益水平高于债券型基金和货币市场基金，但低于股票型基金。本基金将投资港股通标的股票，需承担港股通机制下因投资环境、投资标的、市场制度以及交易规则等差异带来的特有风险。
+          </div>
+        </div>
+        <div class="list-modal">
+          <div class="title-small">
+            <span class="icon"></span>
+            <span class="text">投资目标</span>
+          </div>
+          <div class="list-detail">
+          </div>
+        </div>
+        <div class="list-modal">
+          <div class="title-small">
+            <span class="icon"></span>
+            <span class="text">投资范围</span>
+          </div>
+          <div class="list-detail">
+          </div>
+        </div>
+        <div class="list-modal">
+          <div class="title-small">
+            <span class="icon"></span>
+            <span class="text">投资比例</span>
+          </div>
+          <div class="list-detail">
+          </div>
+        </div>
+        <div class="list-modal">
+          <div class="title-small">
+            <span class="icon"></span>
+            <span class="text">收益分配</span>
+          </div>
+          <div class="list-detail">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="list-title">
+          <img src="../images/icon/icon_dc_02.png" />
+          <span>净值走势图</span>
+        </div>
+        <div class="list-modal">
+          <div class="filterDate">
+            <div class="right layui-clear">
+              <div class="layui-input-inline filter-btn filter-active">近一月</div>
+              <div class="layui-input-inline filter-btn">近三个月</div>
+              <div class="layui-input-inline filter-btn">近半年</div>
+              <div class="layui-input-inline filter-btn">近一年</div>
+              <div class="layui-input-inline filter-btn">今年以来</div>
+              <div class="layui-input-inline filter-btn">成立以来</div>
+              <div class="layui-input-inline filter-input">
+                <input type="text" id="startTime" placeholder="起始日期" />&nbsp;-&nbsp;<input type="text" id="endTime"
+                  placeholder="结束日期" />
+                <button class="layui-btn layui-btn-sm layui-btn-warm">查询</button>
+              </div>
+            </div>
+          </div>
+          <div id="lineChats"></div>
+        </div>
+        <div class="list-title">
+          <img src="../images/icon/icon_dc_03.png" />
+          <span>历史净值</span>
+        </div>
+        <div class="list-modal">
+          <div class="list-detail">
+            <table class="layui-table text-center">
+              <thead>
+                <tr>
+                  <td class="name">日期</td>
+                  <td class="name">单位净值</td>
+                  <td class="name">累计净值</td>
+                  <td class="name">涨跌幅</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2017-08-09</td>
+                  <td>1.0235</td>
+                  <td>1.2556</td>
+                  <td>0.30%</td>
+                </tr>
+                <tr>
+                  <td>2017-08-09</td>
+                  <td>1.0235</td>
+                  <td>1.2556</td>
+                  <td>0.30%</td>
+                </tr>
+                <tr>
+                  <td>2017-08-09</td>
+                  <td>1.0235</td>
+                  <td>1.2556</td>
+                  <td>0.30%</td>
+                </tr>
+                <tr>
+                  <td>2017-08-09</td>
+                  <td>1.0235</td>
+                  <td>1.2556</td>
+                  <td>0.30%</td>
+                </tr>
+                <tr>
+                  <td>2017-08-09</td>
+                  <td>1.0235</td>
+                  <td>1.2556</td>
+                  <td>0.30%</td>
+                </tr>
+                <tr>
+                  <td>2017-08-09</td>
+                  <td>1.0235</td>
+                  <td>1.2556</td>
+                  <td>0.30%</td>
+                </tr>
+                <tr>
+                  <td>2017-08-09</td>
+                  <td>1.0235</td>
+                  <td>1.2556</td>
+                  <td>0.30%</td>
+                </tr>
+                <tr>
+                  <td>2017-08-09</td>
+                  <td>1.0235</td>
+                  <td>1.2556</td>
+                  <td>0.30%</td>
+                </tr>
+                <tr>
+                  <td>2017-08-09</td>
+                  <td>1.0235</td>
+                  <td>1.2556</td>
+                  <td>0.30%</td>
+                </tr>
+                <tr>
+                  <td>2017-08-09</td>
+                  <td>1.0235</td>
+                  <td>1.2556</td>
+                  <td>0.30%</td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="mypages_2" class="text-right"></div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="list-title">
+          <img src="../images/icon/icon_dc_04.png" />
+          <span>费率结构</span>
+        </div>
+        <div class="list-modal">
+          <div class="title-small">
+            <span class="icon"></span>
+            <span class="text">认申购费率</span>
+          </div>
+          <div class="list-detail">
+            <table class="layui-table text-center">
+              <tbody>
+                <tr>
+                  <td class="name">金额 (M）</td>
+                  <td>M&lt;1000万</td>
+                  <td>M≥1000万</td>
+                </tr>
+                <tr>
+                  <td class="name">认购费率</td>
+                  <td>1.20%</td>
+                  <td>1000元/笔</td>
+                </tr>
+                <tr>
+                  <td class="name">申购费率</td>
+                  <td>1.50%</td>
+                  <td>1000元/笔</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="list-modal">
+          <div class="title-small">
+            <span class="icon"></span>
+            <span class="text">赎回费率</span>
+          </div>
+          <div class="list-detail">
+            <table class="layui-table text-center">
+              <tbody>
+                <tr>
+                  <td class="name">持有期限 (Y)</td>
+                  <td>Y &lt; 7日</td>
+                  <td>7日&lt;Y&lt;30日</td>
+                  <td>7日&lt;Y&lt;30日</td>
+                  <td>6个月&lt;Y</td>
+                </tr>
+                <tr>
+                  <td class="name">赎回费率</td>
+                  <td>1.20%</td>
+                  <td>1.50%</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="list-modal">
+          <div class="title-small">
+            <span class="icon"></span>
+            <span class="text">基金费用</span>
+          </div>
+          <div class="list-detail">
+            <table class="layui-table text-center">
+              <tbody>
+                <tr>
+                  <td class="name">管理费</td>
+                  <td class="name">托管费</td>
+                  <td class="name">销售服务费</td>
+                </tr>
+                <tr>
+                  <td>1.50%/年</td>
+                  <td>1.50%/年</td>
+                  <td>1.50%/年</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="list-title">
+          <img src="../images/icon/icon_dc_05.png" />
+          <span>基金分红</span>
+        </div>
+        <div class="list-modal">
+          <div class="list-detail" style="min-height:300px;">
+            <table class="layui-table text-center">
+              <tbody>
+                <tr>
+                  <td class="name">可分配收益基准日</td>
+                  <td class="name">权益登记日</td>
+                  <td class="name">红利发放日</td>
+                  <td class="name">每份基金分红（元）</td>
+                </tr>
+                <tr>
+                  <td>2018-05-06</td>
+                  <td>2018-09-06</td>
+                  <td>2018-10-06</td>
+                  <td>0.01</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="mypages_1" class="text-right"></div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="list-title">
+          <img src="../images/icon/icon_dc_06.png" />
+          <span>临时公告</span>
+        </div>
+        <div class="list-modal lists-box">
+          <ul>
+            <li><i class="iconfont">&#xe60b;</i><a href="">中央第十二巡视组向招商局集团有限公司反馈巡</a><span class="c999">2019-12-09</span>
+            </li>
+            <li><i class="iconfont">&#xe60b;</i><a href="">中央第十二巡视组向招商局集团有限公司反馈巡</a><span class="c999">2019-12-09</span>
+            </li>
+            <li><i class="iconfont">&#xe60b;</i><a href="">中央第十二巡视组向招商局集团有限公司反馈巡</a><span class="c999">2019-12-09</span>
+            </li>
+            <li><i class="iconfont">&#xe60b;</i><a href="">中央第十二巡视组向招商局集团有限公司反馈巡</a><span class="c999">2019-12-09</span>
+            </li>
+            <li><i class="iconfont">&#xe60b;</i><a href="">中央第十二巡视组向招商局集团有限公司反馈巡</a><span class="c999">2019-12-09</span>
+            </li>
+          </ul>
+        </div>
+        <div class="list-title">
+          <img src="../images/icon/icon_dc_07.png" />
+          <span>定期公告</span>
+        </div>
+        <div class="list-modal lists-box">
+          <div class="noneData">暂无数据</div>
+        </div>
+        <div class="list-title">
+          <img src="../images/icon/icon_dc_08.png" />
+          <span>法律文件</span>
+        </div>
+        <div class="list-modal lists-box">
+          <ul>
+            <li><i class="iconfont">&#xe60b;</i><a href="">中央第十二巡视组向招商局集团有限公司反馈巡</a><span class="c999">2019-12-09</span>
+            </li>
+            <li><i class="iconfont">&#xe60b;</i><a href="">中央第十二巡视组向招商局集团有限公司反馈巡</a><span class="c999">2019-12-09</span>
+            </li>
+            <li><i class="iconfont">&#xe60b;</i><a href="">中央第十二巡视组向招商局集团有限公司反馈巡</a><span class="c999">2019-12-09</span>
+            </li>
+            <li><i class="iconfont">&#xe60b;</i><a href="">中央第十二巡视组向招商局集团有限公司反馈巡</a><span class="c999">2019-12-09</span>
+            </li>
+            <li><i class="iconfont">&#xe60b;</i><a href="">中央第十二巡视组向招商局集团有限公司反馈巡</a><span class="c999">2019-12-09</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <div class="list-title">
+          <img src="../images/icon/icon_dc_09.png" />
+          <span>销售中心</span>
+        </div>
+        <div class="list-modal">
+          <div class="list-detail">
+            <div class="message">您可以来西藏东财基金直销中心购买基金，<span class="orange">点击下载</span>直销中心办理业务所需表单</div>
+            <table class="layui-table">
+              <tbody>
+                <tr>
+                  <td class="name">直销中心地址</td>
+                  <td>上海市XXX</td>
+                </tr>
+                <tr>
+                  <td class="name">客服热线</td>
+                  <td>021-2323-2121</td>
+                </tr>
+                <tr>
+                  <td class="name">传真号码</td>
+                  <td>021-2323-2121</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="list-title">
+            <img src="../images/icon/icon_dc_10.png" />
+            <span>销售机构</span>
+          </div>
+          <div class="list-modal">
+            <div class="list-detail">
+              <table class="layui-table">
+                <tbody>
+                  <tr>
+                    <td class="name">销售机构</td>
+                    <td>代销机构名单，请查询本基金《基金份额发售公告》及其更新。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="layui-container com-message">
+    <div class="msg-box">
+      <div class="title">风险提示:</div>
+      <div class="msg c999">基金有风险，投资需谨慎。基金管理人承诺以诚实信用、勤勉尽责的原则管理和运用基金资产，
+        但不保证基金一定盈利，也不保证最低收益。基金过往业绩并不预示其未来表现，基金管理人管理的其他基金的业绩也不构成基金业绩表现的保证，
+        请仔细阅读《基金合同》、《招募说明书》及相关公告。</div>
+    </div>
+  </div>
+  <div class="layui-fluid foot">
+    <div class="layui-container">
+      <div class="foot-up">
+        <div class="foot-nav">
+          <a href="">风险提示</a>
+          <a href="">投资者权益须知</a>
+          <a href="">风险评测</a>
+          <a href="">投资者教育</a>
+          <a href="">免责声明</a>
+          <a href="">联系我们</a>
+        </div>
+        <div class="foot-msg text-center">
+          <div>本网站所载公告信息的获得尽可能可靠、准确及完整，但不对其精确性及完整性做出保证。本网站所载研究报告及投资观点并不构成对取阅者实质性的投资建议或西藏东财基金管理供</div>
+          <div>公司最终的投资结果。基金有风险，投资需谨慎。基金管理人承诺将本着诚信严谨的原则，勤勉尽责地管理基金资产，但并不保证基金一定盈利，也不保证最低收益。本基金管理人</div>
+          <div>所管理基金的过往业绩并不预示其未来表现，投资本基金管理人所管理的基金前，请务必认真阅读该基金相关的《基金合同》及最新《招募说明书》等法律文件。</div>
+        </div>
+      </div>
+      <div class="foot-down text-center">
+        <div>
+          <span>客服热线：021-38809820</span>
+          <span>人工服务时间(工作日)：上午9:00 - 11:30，下午13:00 - 15:00</span>
+        </div>
+        <div>
+          <span>公司地址：上海市龙田路190号2号楼3楼</span>
+          <span>邮编：200235</span>
+        </div>
+        <div>
+          <span>版权所有：西藏东财基金管理有限公司|Copyright © 2018 Tibet Eastmoney Fund Managememnt Co.，Ltd</span>
+          <span>沪ICP备**号 沪公网安备**号</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $(function () {
+    layui.use(['laypage'], function () {
+      var laypage = layui.laypage;
+      laypage.render({
+        elem: 'mypages_1',
+        count: 100,
+        theme: '#FF4400',
+        layout: ['count', 'prev', 'page', 'next', 'skip'],
+        jump: function (obj) {
+          console.log(obj)
+        }
+      });
+      laypage.render({
+        elem: 'mypages_2',
+        count: 100,
+        theme: '#FF4400',
+        layout: ['count', 'prev', 'page', 'next', 'skip'],
+        jump: function (obj) {
+          console.log(obj)
+        }
+      });
+    });
+    $("#detailNav .item").on("click", function () {
+      var index = $(this).index();
+      var $line = $("#detailNav .line");
+      $("#detailBox .item").eq(index).show().siblings().hide();
+      $(this).addClass('active').siblings().removeClass('active');
+      var left = 10
+      $line.animate({
+        left: left + 120 * index + 'px'
+      }, 300);
+    });
+    setDateList('nearMonth');
+  });
+
+  function setDateList(type) {
+    var dateList = []
+    var date = new Date();
+    var year = date.getFullYear(),
+      month = date.getMonth() + 1,
+      day = date.getDate()
+    month = month > 9 ? month : '0' + month;
+    if (type == 'nearMonth') {
+      for (var i = 1; i <= day; i++) {
+        var _day = i > 9 ? i : '0' + i;
+        dateList.push(year + '-' + month + '-' + _day);
+      }
+    }
+    console.log(dateList)
+    initChart(dateList);
+  }
+
+  function initChart(dateList) {
+    var myChart = echarts.init(document.getElementById('lineChats'));
+    option = {
+      title: {
+        text: ''
+      },
+      tooltip: {
+        trigger: 'axis'
+      },
+      legend: {
+        x: 'left',
+        y: 'bottom',
+        data: ['单位净值', '累计净值', '最低/最高净值']
+      },
+      grid: {
+        left: '1%',
+        top: '5%',
+        right: '0',
+        bottom: '10%',
+        containLabel: true
+      },
+      toolbox: {
+        feature: {
+          saveAsImage: {}
+        }
+      },
+      xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: dateList
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [{
+          name: '单位净值',
+          type: 'line',
+          data: [120, 132, 101, 134, 90, 230, 210]
+        },
+        {
+          name: '累计净值',
+          type: 'line',
+          data: [220, 182, 191, 234, 290, 330, 310]
+        },
+        {
+          name: '最低/最高净值',
+          type: 'line',
+          data: [150, 232, 201, 154, 190, 330, 410]
+        },
+      ]
+    };
+    myChart.setOption(option);
+  }
+</script>
+
+</html>

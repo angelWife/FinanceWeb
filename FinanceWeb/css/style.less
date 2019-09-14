@@ -1,107 +1,540 @@
 @import 'base.less';
+
 /*首页*/
-.main-index{
-  .index-banner{
-    a{
+.main-index {
+  .index-banner {
+    a {
       display: block;
     }
-    img{
+
+    img {
       width: 100%;
     }
   }
-  .modal{
-    margin-top:30px;
+
+  .modal {
+    margin-top: 30px;
   }
-  .index-tab{
-    margin-top:0;
-    .layui-tab-title{
-      li{
-        font-size:16px;
-        &:after{
-          border-top:2px solid @white;
+
+  .index-tab {
+    margin-top: 0;
+
+    .layui-tab-title {
+      li {
+        font-size: 16px;
+
+        &:after {
+          border-top: 2px solid @white;
         }
-        &.layui-this{
-          font-weight:600;
-          &:after{
-            border-top-color:@red_orange;
+
+        &.layui-this {
+          font-weight: 600;
+
+          &:after {
+            border-top-color: @red_orange;
           }
         }
       }
     }
-    .layui-table-view{
-      border:0;
+
+    .layui-table-view {
+      border: 0;
     }
-    .layui-tab-content{
-      padding:0;
+
+    .layui-tab-content {
+      padding: 0;
     }
-    .layui-table-header{
-      border:0;
-      th{
-        border-color:@white;
+
+    .layui-table-header {
+      border: 0;
+
+      th {
+        border-color: @white;
       }
     }
   }
-  .list-modal{
-    padding:10px 0;
-    .pic{
-      width:200px;
-      img{
+
+  .list-modal {
+    padding: 10px 0;
+
+    .pic {
+      width: 200px;
+
+      img {
         width: 100%;
       }
     }
-    .lists-box{
+
+    .lists-box {
       width: 800px;
-      padding:0 20px;
+      padding: 0 20px;
       box-sizing: border-box;
-      &.left-list{
-        padding:0 50px 0 0;
+
+      &.left-list {
+        padding: 0 50px 0 0;
       }
-      li{
-        height:28px;
+
+      li {
+        height: 28px;
         line-height: 28px;
         padding-left: 20px;
         position: relative;
+
         // border-bottom:1px dashed @gray_e6;
-        i{
+        i {
           position: absolute;
-          font-size:12px;
-          left:5px;
-          color:@gray_99;
+          font-size: 12px;
+          left: 5px;
+          color: @gray_99;
         }
-      a{
-        display: inline-block;
-        max-width: 600px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+
+        a {
+          display: inline-block;
+          max-width: 600px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        span {
+          float: right;
+        }
       }
-      span{
-        float:right;
-      }
-      }
-      
+
     }
   }
 }
+
 /*注册*/
-.main-register{
-  border-top:1px solid @gray_e6;
-  .layui-form{
+.main-register {
+  .layui-form {
     width: 460px;
-    margin:50px 0 50px 210px;
+    margin: 50px 0 50px 210px;
   }
-  .layui-form-label{
-    padding-left:0;
+
+  .layui-form-item {
+    position: relative;
+
+    .errorBox {
+      position: absolute;
+      left: 102%;
+      height: 100%;
+      top: 0;
+      width: auto;
+
+      .error1 {
+        width: 100px;
+      }
+    }
+  }
+
+  .layui-form-label {
+    padding-left: 0;
     width: 95px;
   }
-  .layui-btn{
+
+  .layui-btn {
     width: 100%;
-    padding:0;
+    padding: 0;
     text-align: center;
   }
-  .picmark{
+
+  .picmark {
     width: 100px;
-    height:36px;
-    border:1px solid @gray_e6;
+    height: 36px;
+    border: 1px solid @gray_e6;
+  }
+}
+
+/*登录*/
+.main-login {
+  height: 520px;
+  background: url(../images/pic/login_banner.png) center center no-repeat;
+
+  .login-form {
+    width: 300px;
+    height: 400px;
+    float: right;
+    background: @white url(../images/login/bg_dc_login.png) right bottom no-repeat;
+    margin-top: 60px;
+    border-radius: 0.2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 0 30px;
+
+    .errorBox {
+      height: 30px;
+      line-height: 30px;
+
+      .errorMsg {
+        display: none;
+        width: 100%;
+        border: 1px solid @red;
+        color: @red;
+        padding: 0 10px;
+
+        img {
+          width: 15px;
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+        span {
+          display: inline-block;
+        }
+      }
+    }
+
+    .inputBox {
+      padding: 10px 10px 10px 30px;
+      border-bottom: 1px solid @gray_ee;
+      position: relative;
+      margin-top: 10px;
+
+      img {
+        height: 24px;
+        width: auto;
+        position: absolute;
+        left: 0;
+        top: 10px;
+      }
+
+      input {
+        display: block;
+        padding: 0 5px;
+        width: 100%;
+        height: 24px;
+        line-height: 24px;
+        border: 0;
+        background: none;
+        outline: none;
+      }
+
+      &.getmark {
+        input {
+          width: 120px;
+        }
+
+        img.markPic {
+          position: absolute;
+          height: 30px;
+          bottom: 5px;
+          right: 0;
+        }
+      }
+    }
+
+    .forgetPass {
+      display: inline-block;
+      padding-top: 5px;
+      color: @dark_blue;
+    }
+
+    .btnBox {
+      margin-top: 20px;
+
+      button {
+        width: 100%;
+      }
+    }
+
+    .noReg {
+      display: inline-block;
+      margin-top: 20px;
+      color: @dark_blue;
+    }
+  }
+}
+
+/*产品详情*/
+.main-productDetail {
+  .detail-title {
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 4px solid @red_orange;
+  }
+
+  .detail-nav {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid @gray_ee;
+    position: relative;
+    padding: 0 10px;
+
+    .item {
+      float: left;
+      margin-right: 60px;
+      cursor: pointer;
+      font-size: 15px;
+
+      &.active {
+        color: @red_orange;
+      }
+    }
+
+    .line {
+      position: absolute;
+      height: 6px;
+      line-height: 100%;
+      bottom: 4px;
+      left: 10px;
+    }
+  }
+
+  .detail-box {
+    .item {
+      display: none;
+
+      &:first-child {
+        display: block;
+      }
+    }
+
+    .bg_ee {
+      background: @gray_ee;
+    }
+
+    .title-small {
+      height: 50px;
+      line-height: 50px;
+      color: @gray_66;
+
+      .icon {
+        float: left;
+        margin-top: 22px;
+        width: 5px;
+        height: 5px;
+        background: @red_orange;
+      }
+
+      .text {
+        float: left;
+        margin-left: 5px;
+      }
+    }
+
+    .layui-table {
+      margin: 0;
+
+      td {
+        line-height: 50px;
+        padding: 0 20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        border: 1px solid @gray_ee;
+      }
+
+      .name {
+        width: 110px;
+        text-align: center;
+        background: @gray_ee;
+      }
+
+      .text {
+        width: 216px;
+      }
+    }
+
+    .list-modal {
+      .list-detail {
+        padding: 0 10px;
+
+        .message {
+          margin-bottom: 10px;
+
+          span {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .layui-laypage-btn {
+        background: @red_orange;
+        color: #fff;
+        border-color: @red_orange;
+      }
+
+      .filterDate {
+        height: 30px;
+
+        .filter-btn {
+          background: @white;
+          border: 1px solid @white;
+          height: 26px;
+          line-height: 26px;
+          padding: 0 10px;
+          border-radius: 24px;
+          cursor: pointer;
+          margin-left: 5px;
+        }
+
+        .filter-active {
+          border-color: #FFA280;
+          background: #FFEDE6;
+          color: @red_orange;
+        }
+
+        .filter-input {
+          margin-left: 5px;
+        }
+
+        input {
+          height: 26px;
+          line-height: 26px;
+          width: 100px;
+          padding: 0 10px;
+        }
+
+        .layui-btn-warm {
+          margin-left: 10px;
+          margin-top: -2px;
+        }
+      }
+
+      #lineChats {
+        height: 350px;
+        width: 1000px;
+      }
+
+      &.lists-box {
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        li {
+          height: 50px;
+          line-height: 50px;
+          padding-left: 20px;
+          position: relative;
+          border-bottom: 1px dashed @gray_e6;
+
+          &:first-child {
+            border-top: 1px dashed @gray_e6;
+          }
+
+          i {
+            position: absolute;
+            font-size: 12px;
+            left: 5px;
+            color: @gray_99;
+          }
+
+          a {
+            display: inline-block;
+            max-width: 600px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          span {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*二级页面*/
+.main-list {
+  .listModal {
+    .left-nav {
+      float: left;
+      width: 200px;
+      border: 1px solid @gray_ee;
+
+      .item {
+        border-top: 1px solid @gray_ee;
+
+        &:first-child {
+          border-top: 0;
+        }
+
+        .name,
+        .childName {
+          height: 50px;
+          line-height: 50px;
+          padding: 0 30px;
+          cursor: pointer;
+
+          &:hover {
+            color: @red_orange;
+          }
+        }
+
+        .childItem {
+          display: none;
+          width: 100%;
+          background: @gray_ee;
+          text-align: center;
+        }
+
+        &.active {
+          .name {
+            color: @red_orange;
+          }
+        }
+
+        .childName {
+          &.active {
+            color: @red_orange;
+          }
+        }
+      }
+    }
+
+    .right-list {
+      width: 790px;
+      float: right;
+
+      .lists-box {
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        li {
+          height: 50px;
+          line-height: 50px;
+          padding-left: 20px;
+          position: relative;
+          border-bottom: 1px dashed @gray_e6;
+
+          &:first-child {
+            border-top: 1px dashed @gray_e6;
+          }
+
+          i {
+            position: absolute;
+            font-size: 12px;
+            left: 5px;
+            color: @gray_99;
+          }
+
+          a {
+            display: inline-block;
+            max-width: 500px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          span {
+            float: right;
+          }
+        }
+      }
+      .news-box{
+        padding-left:20px;
+        img{
+          width: 100%;
+        }
+        p{
+          text-indent: 2em;
+          margin-bottom:10px;
+          &.p-img{
+            text-indent: 0;
+          }
+        }
+      }
+    }
   }
 }
