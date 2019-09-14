@@ -75,23 +75,67 @@
 .main-index .list-modal .lists-box li span {
   float: right;
 }
-/*注册*/
+/*注册  #c8cee6  #d68d94 #fff8f6*/
 .main-register .layui-form {
   width: 460px;
   margin: 50px 0 50px 210px;
+}
+.main-register .error-input1 {
+  border-color: #3a7cd3;
+}
+.main-register .error-input2 {
+  border-color: #FF4400;
 }
 .main-register .layui-form-item {
   position: relative;
 }
 .main-register .layui-form-item .errorBox {
   position: absolute;
-  left: 102%;
+  left: 103%;
   height: 100%;
   top: 0;
   width: auto;
+  white-space: nowrap;
 }
-.main-register .layui-form-item .errorBox .error1 {
-  width: 100px;
+.main-register .layui-form-item .errorBox img {
+  width: 15px;
+  margin-right: 5px;
+  margin-top: -1px;
+}
+.main-register .layui-form-item .errorBox .trueFilter {
+  padding: 0 10px;
+  height: 36px;
+  line-height: 36px;
+}
+.main-register .layui-form-item .errorBox .error {
+  padding: 0 10px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #c8cee6;
+  border-radius: 0.3em;
+}
+.main-register .layui-form-item .errorBox .error.type1 {
+  border-color: #c8cee6;
+  background: #f0f9fe;
+  color: #666666;
+}
+.main-register .layui-form-item .errorBox .error.type2 {
+  border-color: #d68d94;
+  background: #fff8f6;
+  color: #FF4400;
+}
+.main-register .layui-form-item .errorBox .sanjiao {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: -5px;
+  top: 14px;
+}
+.main-register .layui-form-item .errorBox .sanjiao.bg1 {
+  background: url(../images/icon/error-l1.jpg) center center no-repeat;
+}
+.main-register .layui-form-item .errorBox .sanjiao.bg2 {
+  background: url(../images/icon/error-l2.jpg) center center no-repeat;
 }
 .main-register .layui-form-label {
   padding-left: 0;

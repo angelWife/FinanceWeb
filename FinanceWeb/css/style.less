@@ -105,25 +105,70 @@
   }
 }
 
-/*注册*/
+/*注册  #c8cee6  #d68d94 #fff8f6*/
 .main-register {
   .layui-form {
     width: 460px;
     margin: 50px 0 50px 210px;
   }
 
+  .error-input1{
+    border-color:#3a7cd3;
+  }
+  .error-input2{
+    border-color:@red_orange;
+  }
   .layui-form-item {
     position: relative;
 
     .errorBox {
       position: absolute;
-      left: 102%;
+      left: 103%;
       height: 100%;
       top: 0;
       width: auto;
-
-      .error1 {
-        width: 100px;
+      white-space: nowrap;
+      img{
+        width: 15px;
+        margin-right:5px;
+        margin-top:-1px;
+      }
+      .trueFilter{
+        padding:0 10px;
+        height:36px;
+        line-height: 36px;
+      }
+      .error{
+        padding:0 10px;
+        height:36px;
+        line-height: 36px;
+        border:1px solid #c8cee6;
+        border-radius:0.3em;
+        
+        &.type1{
+          border-color:#c8cee6;
+          background: #f0f9fe;
+          color:@gray_66;
+        }
+        
+        &.type2{
+          border-color:#d68d94;
+          background: #fff8f6;
+          color:@red_orange;
+        }
+      }
+      .sanjiao{
+        position: absolute;
+        width: 8px;
+        height:8px;
+        left:-5px;
+        top:14px;
+        &.bg1{
+          background:url(../images/icon/error-l1.jpg) center center no-repeat;
+        }
+        &.bg2{
+          background:url(../images/icon/error-l2.jpg) center center no-repeat;
+        }
       }
     }
   }

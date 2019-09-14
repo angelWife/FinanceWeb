@@ -289,11 +289,15 @@
         <label class="layui-form-label">手机号</label>
         <div class="layui-input-block">
           <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输手机号码"
-            class="layui-input">
+            class="layui-input error-input1">
         </div>
-        <!-- <div class="errorBox">
-          <div class="red error1">错误提示</div>
-        </div> -->
+        <div class="errorBox">
+          <div class="error type1 layui-inline">
+            <img src="../images/icon/tag_02.png"/>
+            <span>手机号码不合规范，请重新输入</span>
+          </div>
+          <div class="sanjiao bg1"></div>
+        </div>
       </div>
       <div class="layui-form-item">
         <div class="layui-inline">
@@ -305,16 +309,28 @@
             <img class="picmark" src="" />
           </div>
         </div>
+        <div class="errorBox">
+          <div class="trueFilter layui-inline">
+            <img src="../images/icon/tag_03.png"/>
+          </div>
+        </div>
       </div>
       <div class="layui-form-item">
         <div class="layui-inline">
           <label class="layui-form-label">短信验证码</label>
           <div class="layui-input-inline" style="width: 240px;">
-            <input type="text" name="price_min" placeholder="请输入短信验证码" autocomplete="off" class="layui-input">
+            <input type="text" name="price_min" placeholder="请输入短信验证码" autocomplete="off" class="layui-input error-input2">
           </div>
           <div class="layui-input-inline right" style="width: 100px;margin-right: -10px;">
             <button type="button" class="layui-btn layui-btn-danger" onclick="sendMark(this)">发送验证码</button>
           </div>
+        </div>
+        <div class="errorBox">
+          <div class="error type2 layui-inline">
+            <img src="../images/icon/tag_01.png"/>
+            <span>校验失败</span>
+          </div>
+          <div class="sanjiao bg2"></div>
         </div>
       </div>
       <div class="layui-form-item">
