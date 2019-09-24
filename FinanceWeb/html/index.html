@@ -305,7 +305,7 @@
                   <th width="70"><span>风险等级</span></th>
                   <th width="70"><span>净值日期</span></th>
                   <th class="pr20" width="60" data-name=""><span>日涨跌幅</span><span class="sort"><i
-                        class="iconfont">&#xe73a;</i><i class="iconfont">&#xe600;</i></span></th>
+                        class="iconfont up">&#xe73a;</i><i class="iconfont down">&#xe600;</i></span></th>
                   <th class="pr20" width="60"><span>单位净值</span><span class="sort"><i class="iconfont">&#xe73a;</i><i
                         class="iconfont">&#xe600;</i></span></th>
                   <th class="pr20" width="60"><span>累计净值</span><span class="sort"><i class="iconfont">&#xe73a;</i><i
@@ -319,7 +319,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>东财基金名称01</td>
+                  <td>东财基金名称01东财基金名称01东财基金名称01东财基金名称01东财基金名称01</td>
                   <td>193321</td>
                   <td>中风险 (R3)</td>
                   <td>2019-09-09</td>
@@ -502,6 +502,12 @@
         ,autoplay: false
       });
     });
+
+    $(".com-table .sort i").on('click',function() {
+      $(this).css("color","#f78e1e");
+      $(this).siblings().css("color","#999");
+    });
+
   });
 </script>
 

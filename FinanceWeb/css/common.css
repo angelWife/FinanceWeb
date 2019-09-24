@@ -47,7 +47,7 @@ a:hover {
   height: 90px;
 }
 .head .head-nav .logo {
-  line-height: 90px;
+  padding-top: 20px;
 }
 .head .head-nav .logo img {
   height: 50px;
@@ -74,8 +74,6 @@ a:hover {
 }
 .head .head-nav .navList .item.active > a {
   color: #FF4400;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 0.3em;
@@ -83,12 +81,8 @@ a:hover {
 .head .head-nav .navList .childNavBox {
   position: absolute;
   display: none;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 0.3em;
-  -moz-border-radius: 0.3em;
   border-radius: 0.3em;
   padding: 20px;
   top: 63px;
@@ -330,6 +324,7 @@ a:hover {
 }
 .com-table td:first-child {
   text-align: left;
+  max-width: 100px;
 }
 .com-table td .layui-btn-xs {
   height: 26px;
