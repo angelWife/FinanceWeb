@@ -277,7 +277,11 @@
     <div class="layui-carousel index-banner" id="index-banner">
       <div carousel-item>
         <div>
-          <img src="../images/pic/banner.png" />
+          <!-- <a class="picBox"><img src="../images/pic/banner.png" /></a> -->
+          <a class="picBox" style="height:100%;background: url(../images/pic/banner.png) center center no-repeat;"></a>
+        </div>
+        <div>
+          <a class="picBox" style="height:100%;background: url(../images/pic/banner.png) center center no-repeat;"></a>
         </div>
       </div>
     </div>
@@ -497,9 +501,9 @@
         elem: '#index-banner'
         ,width: '100%' //设置容器宽度
         ,height: '300px'
-        ,arrow: 'always' //始终显示箭头
+        ,arrow: 'none' //始终显示箭头
         //,anim: 'updown' //切换动画方式
-        ,autoplay: false
+        ,autoplay: true
       });
     });
 

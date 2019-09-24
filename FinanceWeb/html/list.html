@@ -321,13 +321,22 @@
           <div id="mypages" class="text-right"></div>
         </div>
         <div class="news-box">
-          <p class="p-img"><img src="../images/pic/login_banner.png" /></p>
-          <p>中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限
-            公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二…</p>
-          <p>中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限
-            公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二…</p>
-          <p>中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限
-            公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二…</p>
+          <div class="artical-title">
+            <h3 class="text-center">中央第十二巡视组</h3>
+            <div class="artical-msg">
+              <span>作者：卧龙生</span>
+              <span>发布时间：2019年4月20日</span>
+            </div>
+          </div>
+          <div class="artical-mian">
+            <p class="p-img"><img src="../images/pic/login_banner.png" /></p>
+            <p>中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限
+              公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二…</p>
+            <p>中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限
+              公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二…</p>
+            <p>中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二巡视组向招商局集团有限
+              公司反馈巡视中央第十二巡视组向招商局集团有限公司反馈巡视中央第十二…</p>
+          </div>
         </div>
       </div>
     </div>
@@ -375,29 +384,29 @@
   </div>
 </body>
 <script>
-  $(function () {
-    layui.use(['laypage'], function () {
-      var laypage = layui.laypage;
+  $(function() {
+    layui.use(['laypage'],function() {
+      var laypage=layui.laypage;
       laypage.render({
         elem: 'mypages',
         count: 100,
         theme: '#FF4400',
-        layout: ['count', 'prev', 'page', 'next', 'skip'],
-        jump: function (obj) {
+        layout: ['count','prev','page','next','skip'],
+        jump: function(obj) {
           console.log(obj)
         }
       });
     });
 
-    $("#list-nav .item > .name").on("click", function () {
+    $("#list-nav .item > .name").on("click",function() {
       $(this).parent().addClass('active').siblings().removeClass('active');
-      var $child = $(this).next('.childItem');
-      if ($child.length > 0) {
+      var $child=$(this).next('.childItem');
+      if($child.length>0) {
         $child.slideToggle();
         $(this).siblings().find('.childItem').slideUp();
       }
     });
-    $(".childItem .childName").on("click", function () {
+    $(".childItem .childName").on("click",function() {
       $(this).addClass('active').siblings().removeClass('active');
     });
   });

@@ -307,7 +307,7 @@
           <span>基本信息</span>
         </div>
         <div class="list-modal">
-          <div class="title">
+          <div class="title-small">
             <span class="icon"></span>
             <span class="text">基本信息</span>
           </div>
@@ -336,6 +336,34 @@
                   <td class="name">基金经理</td>
                   <td class="text">张经理</td>
                   <td class="name">基金托管人</td>
+                  <td class="text">XX基金管理有限公司</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+            <table class="layui-table">
+              <thead>
+                <tr>
+                  <td class="name">基金全称</td>
+                  <td class="name">基金类型</td>
+                  <td class="name">成立日期</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text" width='216'>XX成长价值混合型证券投资基金</td>
+                  <td class="text" width='216'>混合型</td>
+                  <td class="text" width='216'>2019-08-04</td>
+                </tr>
+                <tr>
+                  <td class="text">XX成长价型混合型C</td>
+                  <td class="text">中风险（R3）</td>
+                  <td class="text">XX基金管理有限公司</td>
+                </tr>
+                <tr>
+                  <td class="text">XX7855</td>
+                  <td class="text">张经理</td>
                   <td class="text">XX基金管理有限公司</td>
                 </tr>
               </tbody>
@@ -611,7 +639,9 @@
               </tbody>
             </table>
           </div>
-          <div id="mypages_1" class="text-right"></div>
+          <div id="mypages_1" class="myPage text-right">
+
+          </div>
         </div>
       </div>
       <div class="item">
@@ -747,17 +777,17 @@
   </div>
 </body>
 <script>
-  $(function () {
-    layui.use(['laypage'], function () {
-      var laypage = layui.laypage;
+  $(function() {
+    layui.use(['laypage'],function() {
+      var laypage=layui.laypage;
       laypage.render({
         elem: 'mypages_1',
         count: 100,
-        limit:10, //每页的数据条数
-        curr:2, //起始页
+        limit: 10, //每页的数据条数
+        curr: 2, //起始页
         theme: '#FF4400',
-        layout: ['count', 'prev', 'page', 'next', 'skip'],
-        jump: function (obj) {
+        layout: ['count','prev','page','next','skip'],
+        jump: function(obj) {
           //obj包含了当前分页的所有参数，比如：
           console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
           console.log(obj.limit); //得到每页显示的条数
@@ -767,36 +797,36 @@
         elem: 'mypages_2',
         count: 100,
         theme: '#FF4400',
-        layout: ['count', 'prev', 'page', 'next', 'skip'],
-        jump: function (obj) {
+        layout: ['count','prev','page','next','skip'],
+        jump: function(obj) {
           console.log(obj)
         }
       });
     });
-    $("#detailNav .item").on("click", function () {
-      var index = $(this).index();
-      var $line = $("#detailNav .line");
+    $("#detailNav .item").on("click",function() {
+      var index=$(this).index();
+      var $line=$("#detailNav .line");
       $("#detailBox .item").eq(index).show().siblings().hide();
       $(this).addClass('active').siblings().removeClass('active');
-      var left = 10
+      var left=10
       $line.animate({
-        left: left + 120 * index + 'px'
-      }, 300);
+        left: left+120*index+'px'
+      },300);
     });
     setDateList('nearMonth');
   });
 
   function setDateList(type) {
-    var dateList = []
-    var date = new Date();
-    var year = date.getFullYear(),
-      month = date.getMonth() + 1,
-      day = date.getDate()
-    month = month > 9 ? month : '0' + month;
-    if (type == 'nearMonth') {
-      for (var i = 1; i <= day; i++) {
-        var _day = i > 9 ? i : '0' + i;
-        dateList.push(year + '-' + month + '-' + _day);
+    var dateList=[]
+    var date=new Date();
+    var year=date.getFullYear(),
+      month=date.getMonth()+1,
+      day=date.getDate()
+    month=month>9? month:'0'+month;
+    if(type=='nearMonth') {
+      for(var i=1;i<=day;i++) {
+        var _day=i>9? i:'0'+i;
+        dateList.push(year+'-'+month+'-'+_day);
       }
     }
     console.log(dateList)
@@ -804,8 +834,8 @@
   }
 
   function initChart(dateList) {
-    var myChart = echarts.init(document.getElementById('lineChats'));
-    option = {
+    var myChart=echarts.init(document.getElementById('lineChats'));
+    option={
       title: {
         text: ''
       },
@@ -815,7 +845,7 @@
       legend: {
         x: 'left',
         y: 'bottom',
-        data: ['单位净值', '累计净值', '最低/最高净值']
+        data: ['单位净值','累计净值','最低/最高净值']
       },
       grid: {
         left: '1%',
@@ -838,20 +868,20 @@
         type: 'value'
       },
       series: [{
-          name: '单位净值',
-          type: 'line',
-          data: [120, 132, 101, 134, 90, 230, 210]
-        },
-        {
-          name: '累计净值',
-          type: 'line',
-          data: [220, 182, 191, 234, 290, 330, 310]
-        },
-        {
-          name: '最低/最高净值',
-          type: 'line',
-          data: [150, 232, 201, 154, 190, 330, 410]
-        },
+        name: '单位净值',
+        type: 'line',
+        data: [120,132,101,134,90,230,210]
+      },
+      {
+        name: '累计净值',
+        type: 'line',
+        data: [220,182,191,234,290,330,310]
+      },
+      {
+        name: '最低/最高净值',
+        type: 'line',
+        data: [150,232,201,154,190,330,410]
+      },
       ]
     };
     myChart.setOption(option);

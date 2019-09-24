@@ -457,6 +457,24 @@
 .main-list .listModal .right-list .news-box {
   padding-left: 20px;
 }
+.main-list .listModal .right-list .news-box .artical-title {
+  padding: 20px;
+}
+.main-list .listModal .right-list .news-box .artical-title h3 {
+  font-size: 20px;
+  color: #666666;
+  font-weight: 600;
+}
+.main-list .listModal .right-list .news-box .artical-title .artical-msg {
+  text-align: right;
+  margin-top: 10px;
+  color: #999999;
+  font-size: 12px;
+}
+.main-list .listModal .right-list .news-box .artical-title .artical-msg span {
+  display: inline-block;
+  margin-left: 30px;
+}
 .main-list .listModal .right-list .news-box img {
   width: 100%;
 }
