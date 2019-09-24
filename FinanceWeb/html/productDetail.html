@@ -640,7 +640,22 @@
             </table>
           </div>
           <div id="mypages_1" class="myPage text-right">
-
+            <div class="page-box layui-clear">
+              <span class="page-count">共 100 条</span>
+              <a href="javascript:;" class="page-prev disabled" data-page="4">上一页</a>
+              <a href="javascript:;" class="layui-laypage-first" data-page="1" title="首页">1</a>
+              <a href="javascript:;" data-page="3">3</a><a href="javascript:;" data-page="4">4</a>
+              <span class="page-cur">5</span>
+              <a href="javascript:;" data-page="6">6</a>
+              <a href="javascript:;" data-page="7">7</a>
+              <span class="page-spr">…</span>
+              <a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="10">10</a>
+              <a href="javascript:;" class="page-next" data-page="6">下一页</a>
+              <span class="page-skip">到第
+                <input type="text" min="1" value="1" class="layui-input">页
+                <button type="button" class="page-btn">确定</button>
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -780,19 +795,19 @@
   $(function() {
     layui.use(['laypage'],function() {
       var laypage=layui.laypage;
-      laypage.render({
-        elem: 'mypages_1',
-        count: 100,
-        limit: 10, //每页的数据条数
-        curr: 2, //起始页
-        theme: '#FF4400',
-        layout: ['count','prev','page','next','skip'],
-        jump: function(obj) {
-          //obj包含了当前分页的所有参数，比如：
-          console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
-          console.log(obj.limit); //得到每页显示的条数
-        }
-      });
+      // laypage.render({
+      //   elem: 'mypages_1',
+      //   count: 100,
+      //   limit: 10, //每页的数据条数
+      //   curr: 2, //起始页
+      //   theme: '#FF4400',
+      //   layout: ['count','prev','page','next','skip'],
+      //   jump: function(obj) {
+      //     //obj包含了当前分页的所有参数，比如：
+      //     console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+      //     console.log(obj.limit); //得到每页显示的条数
+      //   }
+      // });
       laypage.render({
         elem: 'mypages_2',
         count: 100,
