@@ -639,7 +639,7 @@
               </tbody>
             </table>
           </div>
-          <div id="mypages_1" class="myPage text-right">
+          <div class="myPage text-right">
             <div class="page-box layui-clear">
               <span class="page-count">共 100 条</span>
               <a href="javascript:;" class="page-prev disabled" data-page="4">上一页</a>
@@ -829,6 +829,9 @@
       },300);
     });
     setDateList('nearMonth');
+    $(".filter-btn").on("click",function() {
+      $(this).addClass("filter-active").siblings().removeClass('filter-active');
+    });
   });
 
   function setDateList(type) {
