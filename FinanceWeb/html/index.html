@@ -52,6 +52,9 @@
                   <div class="title">
                     <span class="line"></span>
                     <span class="text">指数型</span>
+                    <a class="more c999">
+                      <span class="fs12">更多</span>
+                    </a>
                   </div>
                   <div class="lastchild">
                     <a class="">
@@ -75,14 +78,17 @@
                       <span>XX创新基金B</span>
                     </a>
                     <a class="">
-                      <span>XX创新基金A</span>
+                      <span>XX创新基金C</span>
+                    </a>
+                    <a class="">
+                      <span>XX创新基金D</span>
                     </a>
                   </div>
-                  <div class="lastchild">
+                  <!-- <div class="lastchild">
                     <a class="">
                       <span>XX创新基金B</span>
                     </a>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="child-navList">
                   <div class="title">
@@ -95,6 +101,9 @@
                     </a>
                     <a class="">
                       <span>XX创新基金B</span>
+                    </a>
+                    <a class="">
+                      <span>XX创新基金C</span>
                     </a>
                   </div>
                 </div>
@@ -504,6 +513,9 @@
         //,anim: 'updown' //切换动画方式
         ,autoplay: true
       });
+
+      // 处理旗下基金菜单过长
+      setTopNav();
     });
 
     $(".com-table .sort i").on('click',function() {
@@ -531,6 +543,22 @@
       tr+="</tr>"
       tbody.append(tr);
     });
+  }
+
+  function setTopNav() {
+    var list=$(".childNavBox").find('.child-navList');
+
+    if(list&&list.length>2) {
+      $.each(list,function(ind,val) {
+        var nav=$(val).children(".lastchild").children("a");
+        $.each(nav,function(i,v) {
+          if(i>1) {
+            $(v).hide();
+          }
+        })
+
+      });
+    }
   }
 </script>
 

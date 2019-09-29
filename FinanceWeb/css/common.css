@@ -157,6 +157,9 @@ a.picBox {
   overflow: hidden;
   padding-bottom: 10px;
 }
+.head .head-nav .navList .childNavBox .child-navList .title .more {
+  float: right;
+}
 .head .head-nav .navList .childNavBox .child-navList .line {
   float: left;
   height: 15px;
