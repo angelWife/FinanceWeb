@@ -434,12 +434,12 @@
     });
 
     $("#list-nav .item > .name").on("click",function() {
-      $(this).parent().addClass('active').siblings().removeClass('active');
+      $(this).parent().addClass('active').siblings().removeClass('active').find('.active').removeClass('active');
       var $child=$(this).next('.childItem');
       if($child.length>0) {
         $child.slideToggle();
-        $(this).siblings().find('.childItem').slideUp();
       }
+      $(this).parent().siblings().find('.childItem').slideUp();
     });
     $(".childItem .childName").on("click",function() {
       $(this).addClass('active').siblings().removeClass('active');
