@@ -293,7 +293,7 @@
           <a class="more" href="javascript:;"><span>更多</span><i class="iconfont">&#xe6cc;</i></a>
         </div>
         <div class="layui-tab index-tab">
-          <ul class="layui-tab-title">
+          <ul class="layui-tab-title" id="table-tab">
             <li class="layui-this">网站设置</li>
             <li>用户管理</li>
             <li>权限分配</li>
@@ -301,96 +301,95 @@
             <li>订单管理</li>
           </ul>
           <div class="layui-tab-content">
-            <table class="com-table">
-              <thead>
-                <tr>
-                  <th width="200"><span>基金名称</span></th>
-                  <th width="70"><span>基金代码</span></th>
-                  <th width="70"><span>风险等级</span></th>
-                  <th width="70"><span>净值日期</span></th>
-                  <th class="pr20" width="60" data-name=""><span>日涨跌幅</span><span class="sort"><i
-                        class="iconfont up">&#xe73a;</i><i class="iconfont down">&#xe600;</i></span></th>
-                  <th class="pr20" width="60"><span>单位净值</span><span class="sort"><i class="iconfont">&#xe73a;</i><i
-                        class="iconfont">&#xe600;</i></span></th>
-                  <th class="pr20" width="60"><span>累计净值</span><span class="sort"><i class="iconfont">&#xe73a;</i><i
-                        class="iconfont">&#xe600;</i></span></th>
-                  <th class="pr20" width="60"><span>今年以来</span><span class="sort"><i class="iconfont">&#xe73a;</i><i
-                        class="iconfont">&#xe600;</i></span></th>
-                  <th class="pr20" width="60"><span>成立以来</span><span class="sort"><i class="iconfont">&#xe73a;</i><i
-                        class="iconfont">&#xe600;</i></span></th>
-                  <th width="100"><span>操作</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>东财基金名称01东财基金名称01东财基金名称01东财基金名称01东财基金名称01</td>
-                  <td>193321</td>
-                  <td>中风险 (R3)</td>
-                  <td>2019-09-09</td>
-                  <td class="orange">1.21%</td>
-                  <td>1.2123</td>
-                  <td>2.2123</td>
-                  <td class="orange">1.21%</td>
-                  <td class="orange">1.21%</td>
-                  <td><button class="layui-btn layui-btn-xs layui-btn-warm">查询</button></td>
-                </tr>
-                <tr>
-                  <td>东财基金名称01</td>
-                  <td>193321</td>
-                  <td>中风险 (R3)</td>
-                  <td>2019-09-09</td>
-                  <td class="orange">1.21%</td>
-                  <td>1.2123</td>
-                  <td>2.2123</td>
-                  <td class="orange">1.21%</td>
-                  <td class="orange">1.21%</td>
-                  <td><button class="layui-btn layui-btn-xs layui-btn-warm">查询</button></td>
-                </tr>
-                <tr>
-                  <td>东财基金名称01</td>
-                  <td>193321</td>
-                  <td>中风险 (R3)</td>
-                  <td>2019-09-09</td>
-                  <td class="orange">1.21%</td>
-                  <td>1.2123</td>
-                  <td>2.2123</td>
-                  <td class="orange">1.21%</td>
-                  <td class="orange">1.21%</td>
-                  <td><button class="layui-btn layui-btn-xs layui-btn-warm">查询</button></td>
-                </tr>
-                <tr>
-                  <td>东财基金名称01</td>
-                  <td>193321</td>
-                  <td>中风险 (R3)</td>
-                  <td>2019-09-09</td>
-                  <td class="orange">1.21%</td>
-                  <td>1.2123</td>
-                  <td>2.2123</td>
-                  <td class="orange">1.21%</td>
-                  <td class="orange">1.21%</td>
-                  <td><button class="layui-btn layui-btn-xs layui-btn-warm">查询</button></td>
-                </tr>
-                <tr>
-                  <td>东财基金名称01</td>
-                  <td>193321</td>
-                  <td>中风险 (R3)</td>
-                  <td>2019-09-09</td>
-                  <td class="orange">1.21%</td>
-                  <td>1.2123</td>
-                  <td>2.2123</td>
-                  <td class="orange">1.21%</td>
-                  <td class="orange">1.21%</td>
-                  <td><button class="layui-btn layui-btn-xs layui-btn-warm">查询</button></td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- <div class="layui-tab-item layui-show">
-
+            <div class="layui-tab-item layui-show">
+              <table class="com-table">
+                <thead>
+                  <tr>
+                    <th width="200"><span>基金名称</span></th>
+                    <th width="70"><span>基金代码</span></th>
+                    <th width="70"><span>风险等级</span></th>
+                    <th width="70"><span>净值日期</span></th>
+                    <th class="pr20" width="60" data-name=""><span>日涨跌幅</span><span class="sort"><i
+                          class="iconfont up">&#xe73a;</i><i class="iconfont down">&#xe600;</i></span></th>
+                    <th class="pr20" width="60"><span>单位净值</span><span class="sort"><i class="iconfont">&#xe73a;</i><i
+                          class="iconfont">&#xe600;</i></span></th>
+                    <th class="pr20" width="60"><span>累计净值</span><span class="sort"><i class="iconfont">&#xe73a;</i><i
+                          class="iconfont">&#xe600;</i></span></th>
+                    <th class="pr20" width="60"><span>今年以来</span><span class="sort"><i class="iconfont">&#xe73a;</i><i
+                          class="iconfont">&#xe600;</i></span></th>
+                    <th class="pr20" width="60"><span>成立以来</span><span class="sort"><i class="iconfont">&#xe73a;</i><i
+                          class="iconfont">&#xe600;</i></span></th>
+                    <th width="100"><span>操作</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>东财基金名称01东财基金名称01东财基金名称01东财基金名称01东财基金名称01</td>
+                    <td>193321</td>
+                    <td>中风险 (R3)</td>
+                    <td>2019-09-09</td>
+                    <td class="orange">1.21%</td>
+                    <td>1.2123</td>
+                    <td>2.2123</td>
+                    <td class="orange">1.21%</td>
+                    <td class="orange">1.21%</td>
+                    <td><button class="layui-btn layui-btn-xs layui-btn-warm">查询</button></td>
+                  </tr>
+                  <tr>
+                    <td>东财基金名称01</td>
+                    <td>193321</td>
+                    <td>中风险 (R3)</td>
+                    <td>2019-09-09</td>
+                    <td class="orange">1.21%</td>
+                    <td>1.2123</td>
+                    <td>2.2123</td>
+                    <td class="orange">1.21%</td>
+                    <td class="orange">1.21%</td>
+                    <td><button class="layui-btn layui-btn-xs layui-btn-warm">查询</button></td>
+                  </tr>
+                  <tr>
+                    <td>东财基金名称01</td>
+                    <td>193321</td>
+                    <td>中风险 (R3)</td>
+                    <td>2019-09-09</td>
+                    <td class="orange">1.21%</td>
+                    <td>1.2123</td>
+                    <td>2.2123</td>
+                    <td class="orange">1.21%</td>
+                    <td class="orange">1.21%</td>
+                    <td><button class="layui-btn layui-btn-xs layui-btn-warm">查询</button></td>
+                  </tr>
+                  <tr>
+                    <td>东财基金名称01</td>
+                    <td>193321</td>
+                    <td>中风险 (R3)</td>
+                    <td>2019-09-09</td>
+                    <td class="orange">1.21%</td>
+                    <td>1.2123</td>
+                    <td>2.2123</td>
+                    <td class="orange">1.21%</td>
+                    <td class="orange">1.21%</td>
+                    <td><button class="layui-btn layui-btn-xs layui-btn-warm">查询</button></td>
+                  </tr>
+                  <tr>
+                    <td>东财基金名称01</td>
+                    <td>193321</td>
+                    <td>中风险 (R3)</td>
+                    <td>2019-09-09</td>
+                    <td class="orange">1.21%</td>
+                    <td>1.2123</td>
+                    <td>2.2123</td>
+                    <td class="orange">1.21%</td>
+                    <td class="orange">1.21%</td>
+                    <td><button class="layui-btn layui-btn-xs layui-btn-warm">查询</button></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="layui-tab-item">内容2</div>
             <div class="layui-tab-item">内容3</div>
             <div class="layui-tab-item">内容4</div>
-            <div class="layui-tab-item">内容5</div> -->
+            <div class="layui-tab-item">内容5</div>
           </div>
         </div>
       </div>
@@ -510,9 +509,29 @@
     $(".com-table .sort i").on('click',function() {
       $(this).css("color","#f78e1e");
       $(this).siblings().css("color","#999");
+      $(this).parents('th').siblings().find('.iconfont').css("color","#999");
+      initTable(list,$(this).parents('table'));
+    });
+
+    $("#table-tab li").on("click",function() {
+      var $table=$(".layui-tab-content .layui-show").children('table');
+      $table.find('.iconfont').css("color","#999");
+      initTable([],$table);
     });
 
   });
+
+  function initTable(list,table) {
+    var tbody=$(table).children('tbody');
+    $.each(list,function(ind,val) {
+      var tr="<tr>";
+      tr+="<td onclick='gotoFundDetail("+val.id+");'>"+val.name+"</td>";
+      tr+="<td>"+val.mark+"</td>";
+      // 这边你具体放下数据字段
+      tr+="</tr>"
+      tbody.append(tr);
+    });
+  }
 </script>
 
 </html>
