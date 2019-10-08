@@ -793,8 +793,9 @@
 </body>
 <script>
   $(function() {
-    layui.use(['laypage'],function() {
+    layui.use(['laypage','laydate'],function() {
       var laypage=layui.laypage;
+      var laydate=layui.laydate;
       // laypage.render({
       //   elem: 'mypages_1',
       //   count: 100,
@@ -816,6 +817,12 @@
         jump: function(obj) {
           console.log(obj)
         }
+      });
+      laydate.render({
+        elem: '#startTime'
+      });
+      laydate.render({
+        elem: '#endTime'
       });
     });
     $("#detailNav .item").on("click",function() {
