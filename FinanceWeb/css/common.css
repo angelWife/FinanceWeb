@@ -198,7 +198,7 @@ a.picBox {
 }
 .head .head-nav .login {
   float: left;
-  line-height: 90px;
+  padding-top: 30px;
 }
 .nav-tree {
   font-size: 13px;
