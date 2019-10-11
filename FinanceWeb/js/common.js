@@ -12,4 +12,7 @@ $(function(){
       $(childNavBox).stop().fadeOut();
     }
   });
+  $("#head-nav li").off("click").on("click",function(){
+    $(this).addClass('active').siblings().removeClass('active');
+  });
 });
