@@ -519,10 +519,10 @@
     });
 
     $(".com-table .sort i").on('click',function() {
-      $(this).css("color","#f78e1e");
-      $(this).siblings().css("color","#999");
-      $(this).parents('th').siblings().find('.iconfont').css("color","#999");
-      initTable(list,$(this).parents('table'));
+      $(this).addClass('orange');
+      $(this).siblings().removeClass("orange");
+      $(this).parents('th').siblings().find('.iconfont').removeClass("orange");
+      // initTable(list,$(this).parents('table'));
     });
 
     $("#table-tab li").on("click",function() {
