@@ -8,6 +8,9 @@ a:hover {
 a.picBox {
   display: block;
 }
+body {
+  overflow-y: scroll;
+}
 /*通用调整*/
 .layui-fluid {
   padding: 0;
