@@ -527,7 +527,7 @@
 
     $("#table-tab li").on("click",function() {
       var $table=$(".layui-tab-content .layui-show").children('table');
-      $table.find('.iconfont').css("color","#999");
+      $table.find('.iconfont').removeClass("orange");
       initTable([],$table);
     });
 

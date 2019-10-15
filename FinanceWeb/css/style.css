@@ -1,5 +1,8 @@
 @charset 'utf-8';
 /*首页*/
+.main-index {
+  min-height: 600px;
+}
 .main-index .index-banner a {
   display: block;
 }
@@ -234,6 +237,9 @@
   color: #0E3E9E;
 }
 /*产品详情*/
+.main-productDetail {
+  min-height: 600px;
+}
 .main-productDetail .detail-title {
   font-size: 20px;
   padding: 10px;
@@ -386,6 +392,9 @@
   float: right;
 }
 /*二级页面*/
+.main-list {
+  min-height: 600px;
+}
 .main-list .listModal .left-nav {
   float: left;
   width: 200px;
