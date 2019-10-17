@@ -364,6 +364,15 @@ body {
   text-align: center;
   color: #999999;
 }
+.article-modal p {
+  margin-bottom: 10px;
+}
+.article-modal table {
+  width: 100%;
+}
+.article-modal table td {
+  border-bottom: 1px solid #e6e6e6;
+}
 .foot {
   background: #ECEEF0;
   font-size: 12px;
