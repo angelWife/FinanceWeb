@@ -423,6 +423,9 @@
   background: #eee;
   text-align: center;
 }
+.main-list .listModal .left-nav .item .childItem.show {
+  display: block;
+}
 .main-list .listModal .left-nav .item.active .name {
   color: #FF4400;
 }
